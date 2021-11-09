@@ -48,5 +48,21 @@ namespace PlateGenerator_Service.Helper
 
             Console.ReadLine();
         }
+
+        public static void PrintNewPlate(this Plate plate)
+        {
+            Console.WriteLine(Message.PrintNewPlateMessage);
+            Console.WriteLine(Message.PrintPlate(plate));
+
+            Console.ReadLine();
+        }
+
+        public static void PrintOldPlate(this Plate plate)
+        {
+            Console.WriteLine(Message.PrintOldPlateMessage);
+            Console.WriteLine(Message.PrintPlate(plate));
+
+            Console.ReadLine();
+        }
     }
 }
