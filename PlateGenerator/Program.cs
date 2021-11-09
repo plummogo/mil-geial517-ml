@@ -1,4 +1,5 @@
-﻿using PlateGenerator_Service.Builder;
+﻿using PlateGenerator_Service.AbstractFactory;
+using PlateGenerator_Service.Builder;
 using PlateGenerator_Service.Director;
 using PlateGenerator_Service.Helper;
 using System;
@@ -9,6 +10,7 @@ namespace PlateGenerator
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(PatternMessage.Builder);
             Console.Write(Message.CharPlateMessage);
             int charCount = Convert.ToInt32(Console.ReadLine());
 
@@ -23,6 +25,18 @@ namespace PlateGenerator
             var plate = builder.GetPlate();
 
             plate.PrintPlate();
+
+            Console.WriteLine(PatternMessage.AbstractFactory);
+
+            PlateFactory plateFactory = new HungarianPlateFactory(director, builder);
+
+            PlateClient plateClient = new PlateClient(plateFactory);
+
+            var oldPlate = plateClient.GetHungarianOldPlate();
+            oldPlate.PrintOldPlate();
+
+            var newPlate = plateClient.GetHungarianNewPlate();
+            newPlate.PrintNewPlate();
         }
     }
 }
