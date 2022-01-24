@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PlateGenerator_Model\PlateGenerator_Model.csproj" />
+    <ProjectReference Include="..\PlateGenerator_Repository\PlateGenerator_Repository.csproj" />
   </ItemGroup>
 
 </Project>
