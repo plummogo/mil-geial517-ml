@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace PlateGenerator_Repository.Repository
 {
@@ -28,10 +27,7 @@ namespace PlateGenerator_Repository.Repository
 
         public void Insert(Plate plateToInsert)
         {
-            if (plateToInsert != null)
-            {
-                _plate.Plates.Add(plateToInsert);
-            }
+            _plate.Plates.Add(plateToInsert);
         }
 
         public void Save()

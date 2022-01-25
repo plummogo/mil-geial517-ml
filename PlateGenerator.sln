@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlateGenerator_Service", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlateGenerator_Repository", "PlateGenerator_Repository\PlateGenerator_Repository.csproj", "{DED62C12-1E14-4C41-B67C-CCA3EE081B0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlateGenerator_Test", "PlateGenerator_Test\PlateGenerator_Test.csproj", "{71A840BE-BEF0-4E09-998C-607A52AB1ACB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlateGenerator_Test", "PlateGenerator_Test\PlateGenerator_Test.csproj", "{71A840BE-BEF0-4E09-998C-607A52AB1ACB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlateGenerator_Web", "PlateGenerator_Web\PlateGenerator_Web.csproj", "{92A29319-F121-4B2E-9413-F05BDEF54974}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{71A840BE-BEF0-4E09-998C-607A52AB1ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71A840BE-BEF0-4E09-998C-607A52AB1ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71A840BE-BEF0-4E09-998C-607A52AB1ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92A29319-F121-4B2E-9413-F05BDEF54974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A29319-F121-4B2E-9413-F05BDEF54974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A29319-F121-4B2E-9413-F05BDEF54974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A29319-F121-4B2E-9413-F05BDEF54974}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
